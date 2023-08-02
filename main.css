@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    margin:0;
+    padding:0;
+    font-family:cursive
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* we are styling the header */
+
+header{
+margin-top:10px;
+margin-bottom: 20px;
+font-weight: bolder;
+font-size: 1.5em;
+}
+
+.row{
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+section{
+    width:32%;
+    border:2.5px solid black;
+    background-color: rgba(49, 45, 45, 0.603);
+    margin-bottom: 15px;
+}
+section .food{
+    display:flex;
+    justify-content: flex-end;
+   
+}
+
+section p{
+    padding:5px 15px;
+   
+    font-weight:530;
+}
+
+section .foodStuff{
+
+   width:30%;
+   border-left: 2.5px solid black;
+   border-bottom: 2.5px solid black;
+   text-align: center;
+
+}
+.chick{
+    background-color: pink;
+    
+    text-align: center;
+}
+.beef{
+    background-color: rgb(199, 28, 57);
+    /* border:2.5px solid black; */
+    
+    text-align: center;
+}
+.sushi{
+    background-color: rgb(255, 255, 112);
+    
+    text-align: center;
+}
+
+
+
+
+
+@media (min-width:992px) {
+    .row{
+        flex-wrap: wrap;
+    }
+    section{
+        width:32%;
+    
+    }
+}
+
+
+@media (min-width:768px) and (max-width:991px) {
+    .row{
+        flex-wrap: wrap;
+    }
+    .row  .thisOne{
+        width:100%
+    }
+    
+    section{
+        width:48%;
+        
+    }
+}
+@media (max-width: 767px){
+    .row{
+        flex-wrap: wrap;
+    }
+    section{
+        width:100%;
+        
+        
+    }
+    
+}
